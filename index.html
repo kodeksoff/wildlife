@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wildlife</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="wildlife">
+        <div class="wildlife-header">
+            <div class="container">
+                <div class="wildlife-header-navbar row">
+                    <div class="wildlife-header-navbar__logo">
+                        <img src="assets/logo.svg" alt="wildlife">
+                        <h2>WILDLIFE</h2>
+                    </div>
+                    <nav class="wildlife-header-navbar__navigation">
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#" class="search"></a></li>
+                            <li><a href="#" class="button">Sign In</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="wildlife-header-content">
+                    <h1>Survival</h1>
+                    <p>What this means is that we exist to<br /> help protect our environment<br /> and do in numbers of ways. You<br /> can save the planet by donation.</p>
+                    <div class="button donate">Donate</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-section">
+        <div class="container">
+            <h2>Latest articles</h2>
+            <h4>Breaking news from the wild</h4>
+            <div class="slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/slide_1.jpg" alt="slide1">
+                            <div class="slider-content">
+                                <h3>Deer</h3>
+                                <p>Naturalist investigation</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="assets/slide_2.jpg" alt="slide2">
+                            <div class="slider-content">
+                                <h3>Squirrel</h3>
+                                <p>Kamikaze squirrels</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="assets/slide_3.jpg" alt="slide4">
+                            <div class="slider-content">
+                                <h3>Bird</h3>
+                                <p>Birds Fight club</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="assets/slide_1.jpg" alt="slide1">
+                            <div class="slider-content">
+                                <h3>Deer</h3>
+                                <p>Naturalist investigation</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="assets/slide_2.jpg" alt="slide2">
+                            <div class="slider-content">
+                                <h3>Squirrel</h3>
+                                <p>Kamikaze squirrels</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="assets/slide_3.jpg" alt="slide4">
+                            <div class="slider-content">
+                                <h3>Bird</h3>
+                                <p>Birds Fight club</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="feedback">
+                <h4>Get notified about new amazing articles</h4>
+                <form action="feedback">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="wildlife-footer">
+        <div class="wildlife-footer-content">
+            <div class="container">
+                <div class="wildlife-footer-content-footer row">
+                    <div class="wildlife-footer-content-footer__logo">
+                        <img src="assets/logo.svg" alt="wildlife">
+                        <h2>WILDLIFE</h2>
+                    </div>
+                    <div class="wildlife-footer-content-footer__nav">
+                        <ul>
+                            <li><a href="#">Articles</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Learn more</a></li>
+                        </ul>
+                    </div>
+                    <div class="wildlife-footer-content-footer__social">
+                        <ul>
+                            <li><a href="#" class="fa facebook"></a></li>
+                            <li><a href="#" class="fa instagram"></a></li>
+                            <li><a href="#" class="fa pinterest"></a></li>
+                            <li><a href="#" class="fa telegram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
